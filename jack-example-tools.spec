@@ -75,16 +75,16 @@ połączeń audio JACK.
 %setup -q
 
 %build
-%meson build \
+%meson \
 	--default-library=shared \
 	%{!?with_zalsa:-Dzalsa=disable}
 
-%ninja_build -C build
+%meson_build
 
 %install
 rm -rf $RPM_BUILD_ROOT
 
-%ninja_install -C build
+%meson_install
 
 %clean
 rm -rf $RPM_BUILD_ROOT
