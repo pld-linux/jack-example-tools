@@ -28,7 +28,7 @@ BuildRequires:	meson >= 0.58.0
 BuildRequires:	ninja >= 1.5
 BuildRequires:	opus-devel >= 0.9.0
 BuildRequires:	readline-devel
-BuildRequires:	rpmbuild(macros) >= 1.736
+BuildRequires:	rpmbuild(macros) >= 2.042
 %if %{with zalsa}
 BuildRequires:	zita-alsa-pcmi-devel
 BuildRequires:	zita-resampler-devel
